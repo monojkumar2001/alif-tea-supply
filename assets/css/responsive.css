@@ -1,0 +1,30 @@
+
+
+@media only screen and (max-width: 991px) {
+ 
+
+  .footer-list-item {
+    padding: 0 10px 20px 10px;
+  }
+  .footer-list {
+    margin-bottom: 15px;
+  }
+  .footer-list-item.footer-list-item-link {
+    border-right: none;
+    border-left: none;
+    align-items: start;
+  }
+  .footer-list-item-social {
+    padding-left: 10px;
+  }
+  .footer-wrapper {
+    padding: 40px 0;
+  }
+  
+}
+@media only screen and (max-width: 768px) {
+  
+}
+@media only screen and (max-width: 576px) {
+
+}
