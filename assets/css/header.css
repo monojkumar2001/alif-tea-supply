@@ -16,7 +16,9 @@ header {
   padding-top: 15px;
   padding-bottom: 15px;
   position: relative;
-  z-index: 4;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.3s ease-in-out;
 }
 .sticky {
   position: fixed;
@@ -40,8 +42,8 @@ header {
 .header-right {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  gap: 5px;
+  flex-direction: column;
 }
 
 .header-menu ul li {
@@ -53,8 +55,8 @@ header {
 .header-menu ul li a {
   text-decoration: none;
   color: var(--black-color);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
   line-height: 24px;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -91,6 +93,10 @@ header {
   visibility: visible;
   left: 0px;
 }
+  .mobile-flex .logo{
+    display: none;
+  }
+
 
 @media only screen and (max-width: 991px) {
   .navbar-one {
@@ -119,6 +125,9 @@ header {
     align-items: center;
     width: 100%;
     padding: 0 10px;
+  }
+  .mobile-flex .logo{
+    display: block;
   }
 
   .close-btn {
@@ -350,4 +359,49 @@ header {
 }
 .logo img {
   width: 152px;
+}
+.header-logo img {
+    width: 72%;
+    margin: auto;
+    display: flex;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: white; /* Ensure background color for smoothness */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for better visual */
+}
+
+.sticky .header-logo {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.sticky {
+  animation: slideInDown 0.5s ease-in-out;
 }

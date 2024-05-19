@@ -13,10 +13,10 @@
   --primary-color:#D17D00;
   
   --main-color:linear-gradient(180deg, #F90 0%, rgba(208, 85, 16, 0.80) 100%);
-  --black-color: #251706;
+  --black-color: #00000;
   --white-color: #ffffff;
   --body-color: #4A4A4A;
-  --primary-font: "Playfair Display", serif;
+  --primary-font: "Inter", serif;
   --body-font: "Inter", serif;
 
   --sec-title-font: 25px;

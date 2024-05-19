@@ -1,6 +1,6 @@
 
 footer.footer {
-    background: rgb(37, 23, 6);
+    background: rgb(2 2 2);
     padding: 50px 0px 30px;
   }
   
@@ -17,7 +17,7 @@ footer.footer {
   }
   
   .footer-list-item h3 {
-    color: rgb(230, 186, 119);
+    color: #fff;
     margin-bottom: 30px;
     font-size: 25px;
   }

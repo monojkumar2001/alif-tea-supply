@@ -45,17 +45,24 @@ $(document).ready(function() {
 // sticky Header
 
 
-var wind = $(window);
-var sticky = $("#sticky-header");
-wind.on("scroll", function () {
-  var scroll = wind.scrollTop();
-  if (scroll < 100) {
-    sticky.removeClass("sticky");
-  } else {
-    sticky.addClass("sticky");
-  }
-});
-
+// var wind = $(window);
+// var sticky = $("#sticky-header");
+// wind.on("scroll", function () {
+//   var scroll = wind.scrollTop();
+//   if (scroll < 100) {
+//     sticky.removeClass("sticky");
+//   } else {
+//     sticky.addClass("sticky");
+//   }
+// });
+ window.addEventListener("scroll", function () {
+   var header = document.getElementById("sticky-header");
+   if (window.scrollY > header.offsetTop) {
+     header.classList.add("sticky");
+   } else {
+     header.classList.remove("sticky");
+   }
+ });
 // Service Slider
 
 // var swiper = new Swiper(".mySwiper", {
