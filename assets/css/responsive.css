@@ -23,9 +23,20 @@
   
 }
 @media only screen and (max-width: 768px) {
-  .product-content a {
-    font-size: 16px;
+.swiper-button-next:after, .swiper-button-prev:after {
+    color: #fff;
+    font-size: 21px;
 }
+.contact-us-title h1 {
+    font-size: 23px;
+    padding-bottom: 40px;
+}
+.contact-us-wrapper {
+    border-radius: 15px;
+  }
+  .contact-us-right{
+    padding: 30px 20px 40px 20px;
+  }
 }
 @media only screen and (max-width: 576px) {
 
