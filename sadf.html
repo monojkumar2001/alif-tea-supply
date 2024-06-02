@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladesh Map with Mini-Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-minimap/dist/Control.MiniMap.min.css" />
+    <style>
+        #map {
+            width: 100%;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-minimap/dist/Control.MiniMap.min.js"></script>
+    <script>
+    var map = L.map('map').setView([23.6850, 90.3563], 7);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    var miniMapLayer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        minZoom: 0, 
+        maxZoom: 13
+    });
+
+    var miniMap = new L.Control.MiniMap(miniMapLayer, { 
+        toggleDisplay: true,
+        minimized: false,
+        position: 'bottomright'
+    }).addTo(map);
+
+    // Add a marker for Dhaka
+    var dhakaMarker = L.marker([23.8103, 90.4125]).addTo(map);
+    dhakaMarker.bindPopup("<b>Dhaka</b><br>Capital of Bangladesh").openPopup();
+</script>
+
+</body>
+</html>

@@ -22,12 +22,13 @@
       rel="stylesheet"
     />
     <!-- Title -->
-    <title>Helpline - Home</title>
+    <title>ALIF TEA SUPPLY</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
-
+   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-minimap/dist/Control.MiniMap.min.css" />
     <!-- main css -->
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
@@ -35,6 +36,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Responsive Style CSS -->
     <link rel="stylesheet" href="./assets/css/responsive.css" />
+
   </head>
 
   <body>
@@ -120,48 +122,9 @@
     </section>
 
     <!-- =====================
-        About US
-    ====================== -->
-    <section id="about" class="about-us cpb-7 cpt-6">
-      <div class="container">
-        <div class="about-us-wrapper">
-          <div class="row align-items-center">
-            <div class="col-lg-6 col-md-12">
-              <div class="about-us-left">
-                <div class="about-us-img">
-                  <img src="/assets/images/about.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-12">
-              <div class="about-us-right">
-                <h2>About Us</h2>
-                <p>
-                  Airport Authorities around the world provide personalized
-                  services for Arrival and Departure passengers through
-                  appointed service providers. Civil Aviation Authority (CAAB)
-                  is pleased to appoint Helpline Associates Ltd. as a service
-                  provider in consideration of their past experiences.
-                </p>
-                <p>
-                  Operating since 2006, Helpline has continued to build a modest
-                  and experienced team to extend personalized services to their
-                  valued passengers with utmost care.
-                </p>
-                <a href="#" class="gallery-link">
-                  <span>Learn More</span>
-                  <img src="/assets/images/right-arow.svg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- =====================
         Product
     ====================== -->
-    <section class="product cpb-7" id="product">
+    <section class="product cpb-7 cpt-7" id="product">
       <div class="container">
         <div class="product-wrapper">
           <div class="row">
@@ -184,7 +147,37 @@
               <div class="col-lg-3 col-md-4 col-6">
                 <div class="product-card">
                   <div class="product-img">
-                    <img src="/assets/images/product-1.png" alt="" />
+                    <img src="/assets/images/product-2.png" alt="" />
+                  </div>
+                  <div class="product-content">
+                    <a href="#">SEYLON Family Blend</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="/assets/images/product-3.png" alt="" />
+                  </div>
+                  <div class="product-content">
+                    <a href="#">SEYLON Family Blend</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="/assets/images/product-4.png" alt="" />
+                  </div>
+                  <div class="product-content">
+                    <a href="#">SEYLON Family Blend</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="/assets/images/product-5.png" alt="" />
                   </div>
                   <div class="product-content">
                     <a href="#">SEYLON Family Blend</a>
@@ -204,7 +197,37 @@
               <div class="col-lg-3 col-md-4 col-6">
                 <div class="product-card">
                   <div class="product-img">
-                    <img src="/assets/images/product-1.png" alt="" />
+                    <img src="/assets/images/product-2.png" alt="" />
+                  </div>
+                  <div class="product-content">
+                    <a href="#">SEYLON Family Blend</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="/assets/images/product-3.png" alt="" />
+                  </div>
+                  <div class="product-content">
+                    <a href="#">SEYLON Family Blend</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="/assets/images/product-4.png" alt="" />
+                  </div>
+                  <div class="product-content">
+                    <a href="#">SEYLON Family Blend</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="/assets/images/product-5.png" alt="" />
                   </div>
                   <div class="product-content">
                     <a href="#">SEYLON Family Blend</a>
@@ -224,67 +247,7 @@
               <div class="col-lg-3 col-md-4 col-6">
                 <div class="product-card">
                   <div class="product-img">
-                    <img src="/assets/images/product-1.png" alt="" />
-                  </div>
-                  <div class="product-content">
-                    <a href="#">SEYLON Family Blend</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-6">
-                <div class="product-card">
-                  <div class="product-img">
-                    <img src="/assets/images/product-1.png" alt="" />
-                  </div>
-                  <div class="product-content">
-                    <a href="#">SEYLON Family Blend</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-6">
-                <div class="product-card">
-                  <div class="product-img">
-                    <img src="/assets/images/product-1.png" alt="" />
-                  </div>
-                  <div class="product-content">
-                    <a href="#">SEYLON Family Blend</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-6">
-                <div class="product-card">
-                  <div class="product-img">
-                    <img src="/assets/images/product-1.png" alt="" />
-                  </div>
-                  <div class="product-content">
-                    <a href="#">SEYLON Family Blend</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-6">
-                <div class="product-card">
-                  <div class="product-img">
-                    <img src="/assets/images/product-1.png" alt="" />
-                  </div>
-                  <div class="product-content">
-                    <a href="#">SEYLON Family Blend</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-6">
-                <div class="product-card">
-                  <div class="product-img">
-                    <img src="/assets/images/product-1.png" alt="" />
-                  </div>
-                  <div class="product-content">
-                    <a href="#">SEYLON Family Blend</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-6">
-                <div class="product-card">
-                  <div class="product-img">
-                    <img src="/assets/images/product-1.png" alt="" />
+                    <img src="/assets/images/product-2.png" alt="" />
                   </div>
                   <div class="product-content">
                     <a href="#">SEYLON Family Blend</a>
@@ -309,7 +272,9 @@
           <div class="row">
             <div class="col-lg-6 col-md-12">
               <div class="contact-us-left">
-                <div class="contact-title">
+                <div id="map"></div>
+               <div >
+                 <div class="contact-title">
                   <h2>Get in touch</h2>
                 </div>
                 <div class="contact-us-lists">
@@ -410,6 +375,7 @@
                 <div class="contact-shap">
                   <img src="/assets/images/home/contact-shap.svg" alt="" />
                 </div>
+               </div>
               </div>
             </div>
             <div class="col-lg-6 col-md-12">
@@ -504,11 +470,6 @@
     ====================== -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-logo">
-          <a href="/">
-            <img src="/assets/images/home/footer-logo.svg" alt="" />
-          </a>
-        </div>
         <div class="footer-wrapper">
           <div class="row">
             <div class="col-lg-4 col-md-6">
@@ -632,6 +593,8 @@
     <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/jquery.nice-select.js"></script>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-minimap/dist/Control.MiniMap.min.js"></script>
     <!-- ===== main js -->
     <script src="./assets/js/jquery.min.js"></script>
     <script src="/assets/js/custom.js"></script>
@@ -680,5 +643,29 @@
   });
 });
     </script>
+
+    <script>
+    var map = L.map('map').setView([23.6850, 90.3563], 7);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    var miniMapLayer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        minZoom: 0, 
+        maxZoom: 13
+    });
+
+    var miniMap = new L.Control.MiniMap(miniMapLayer, { 
+        toggleDisplay: true,
+        minimized: false,
+        position: 'bottomright'
+    }).addTo(map);
+
+    // Add a marker for Dhaka
+    var dhakaMarker = L.marker([23.8103, 90.4125]).addTo(map);
+    dhakaMarker.bindPopup("<b>Dhaka</b><br>Capital of Bangladesh").openPopup();
+</script>
+
   </body>
 </html>
