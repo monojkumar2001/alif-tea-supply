@@ -41,6 +41,10 @@
   .footer-copy-wrapper{
     flex-direction: column;
   }
+  .map-container {
+    height: 300px;
+}
+  
 }
 @media only screen and (max-width: 576px) {
 
