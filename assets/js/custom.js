@@ -108,7 +108,7 @@ $(document).ready(function() {
 var swiper = new Swiper(".mySwiper", {
   cssMode: true,
   autoplay: {
-    delay: 3000,
+    delay: 5000,
     disableOnInteraction: false,
   },
   navigation: {
